@@ -9,6 +9,7 @@
 	<configs>
 		<config>src/main/java/springpractise/beans.xml</config>
 		<config>src/main/java/springjdbc/beans.xml</config>
+		<config>src/main/java/springpc/beans.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
