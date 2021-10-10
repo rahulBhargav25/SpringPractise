@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	
+	
+	<bean class="springpractise.HardDisk" id="hardDisk1">
+		<property name="cost" value="2500"></property>
+		<property name="name" value="WD-Green"></property>
+		<property name="space" value="512GB"></property>
+	</bean>
+	
+	<bean class="springpractise.Motherboard" id="motherboard1">
+		<property name="cost" value="4500"></property>
+		<property name="name" value="AMD 450PRO m2"></property>
+	</bean>
+	
+	<bean class="springpractise.Processor" id="processor1">
+		<property name="cost" value="6500"></property>
+		<property name="name" value="Ryzen 3 3200g"></property>
+	</bean>
+	
+	<bean class="springpractise.Ram" id="ram1">
+		<property name="cost" value="2800"></property>
+		<property name="name" value="HyperX"></property>
+		<property name="size" value="16GB"></property>
+	</bean>
+	
+	
+	
+	<bean class="springpractise.Computer" id="computer1">
+		<property name="category" value="PC"></property>
+		<property name="company" value="Acer"></property>
+		<property name="cost" value="16300"></property>
+		<property name="hd" ref="hardDisk1"></property>
+		<property name="MD" ref="motherboard1"></property>
+		<property name="PS" ref="processor1"></property>
+		<property name="ram" ref="ram1"></property>
+	</bean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</beans>
